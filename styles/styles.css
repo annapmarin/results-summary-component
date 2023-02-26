@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,700;0,800;1,500&display=swap");
+.result {
+  background: #7857ff;
+  background: linear-gradient(0deg, #2e2be9 0%, #7857ff 100%);
+  width: 350px;
+  height: 500px;
+  border-radius: 30px;
+  text-align: center;
+}
+.result h1 {
+  color: hsl(241deg, 100%, 89%);
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 30px 0;
+}
+.result h2 {
+  color: white;
+  margin: 30px 0 20px 0;
+}
+.result p {
+  margin: 0 50px;
+  color: hsl(241deg, 100%, 89%);
+}
+
+.circle {
+  width: 180px;
+  height: 180px;
+  background: #7857ff;
+  background: linear-gradient(0deg, hsla(241deg, 72%, 46%, 0) 0%, hsl(256deg, 72%, 46%) 100%);
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.circle p {
+  color: hsl(241deg, 100%, 89%);
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.circle p span {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.summary {
+  width: 350px;
+  padding: 30px;
+}
+
+.sum_title {
+  font-size: 1.2rem;
+  margin: 0 0 30px 0;
+}
+
+#reaction {
+  background-color: hsla(0deg, 100%, 67%, 0.1);
+  color: hsl(0deg, 100%, 67%);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+#reaction h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+#reaction p {
+  color: hsl(241deg, 100%, 89%);
+  margin-left: auto;
+}
+#reaction p span {
+  color: hsl(224deg, 30%, 27%);
+  font-weight: 700;
+}
+
+#memory {
+  background-color: hsla(39deg, 100%, 56%, 0.1);
+  color: hsl(39deg, 100%, 56%);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+#memory h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+#memory p {
+  color: hsl(241deg, 100%, 89%);
+  margin-left: auto;
+}
+#memory p span {
+  color: hsl(224deg, 30%, 27%);
+  font-weight: 700;
+}
+
+#verbal {
+  background-color: hsla(166deg, 100%, 37%, 0.1);
+  color: hsl(166deg, 100%, 37%);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+#verbal h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+#verbal p {
+  color: hsl(241deg, 100%, 89%);
+  margin-left: auto;
+}
+#verbal p span {
+  color: hsl(224deg, 30%, 27%);
+  font-weight: 700;
+}
+
+#visual {
+  background-color: hsla(234deg, 85%, 45%, 0.1);
+  color: hsl(234deg, 85%, 45%);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+#visual h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+#visual p {
+  color: hsl(241deg, 100%, 89%);
+  margin-left: auto;
+}
+#visual p span {
+  color: hsl(224deg, 30%, 27%);
+  font-weight: 700;
+}
+
+.button {
+  border: none;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: hsl(224deg, 30%, 27%);
+  font-weight: 700;
+  color: hsl(221deg, 100%, 96%);
+  font-size: 0.8rem;
+}
+
+.button:hover {
+  background: #7857ff;
+  background: linear-gradient(0deg, #2e2be9 0%, #7857ff 100%);
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  background-color: white;
+  width: 700px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 6px 4px 10px 4px hsl(221deg, 100%, 96%);
+  display: flex;
+  flex-direction: row;
+}
+
+.attribution {
+  margin-top: 30px;
+  text-align: center;
+}
+.attribution a {
+  color: #7857ff;
+}
+.attribution a:hover {
+  color: #2e2be9;
+}
+
+@media screen and (max-width: 730px) {
+  .container {
+    max-width: 350px;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */

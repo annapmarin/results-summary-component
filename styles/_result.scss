@@ -1,0 +1,53 @@
+@import "variables";
+
+.result {
+  background: $bgcolor1;
+  background: linear-gradient(0deg, $bgcolor2 0%, $bgcolor1 100%);
+  width: 350px;
+  height: 500px;
+  border-radius: 30px;
+  text-align: center;
+
+  h1 {
+    color: $lavender;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 30px 0;
+  }
+
+  h2 {
+    color: white;
+    margin: 30px 0 20px 0;
+  }
+
+  p {
+    margin: 0 50px;
+    color: $lavender;
+  }
+}
+
+.circle {
+  width: 180px;
+  height: 180px;
+  background: $bgcolor1;
+  background: linear-gradient(0deg, $circlecolor2 0%, $circlecolor1 100%);
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: $lavender;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: center;
+
+    span {
+      color: white;
+      font-size: 4rem;
+      font-weight: 700;
+    }
+  }
+}

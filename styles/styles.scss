@@ -1,0 +1,62 @@
+@use "variables";
+@use "result";
+@use "summary";
+@use "button";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,700;0,800;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  background-color: white;
+  width: 700px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 6px 4px 10px 4px $pale-blue;
+  display: flex;
+  flex-direction: row;
+}
+
+.attribution {
+  margin-top: 30px;
+  text-align: center;
+
+  a {
+    color: $bgcolor1;
+  }
+
+  a:hover {
+    color: $bgcolor2;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .container {
+      max-width: 350px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+      margin-top: 90px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
+
+
