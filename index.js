@@ -1,37 +1,23 @@
-
 // fetch data
-fetch('data.json')
-  .then(res => res.json())
-  .then(data => {
-    const reaction = document.getElementById('reaction');
-    reaction.innerHTML = `
-      <img src="${data[0].icon}" alt="">
-      <h3>${data[0].category}</h3>
-      <p><span>${data[0].score}</span> / 100 </p>
+const getData = async () => {
+  const response = await fetch('data.json');
+  const data = await response.json();
+
+  console.log(document.getElementById(data[0].category.toLowerCase()));
+  for (let i = 0; i < data.length; i++) {
+      document.getElementById(data[i].category.toLowerCase()).innerHTML += `
+        <img src="${data[i].icon}" alt="">
+        <h3>${data[i].category}</h3>
+        <p><span>${data[i].score}</span> / 100 </p
         `
-    const memory = document.getElementById('memory');
-    memory.innerHTML = `
-      <img src="${data[1].icon}" alt="">
-      <h3>${data[1].category}</h3>
-      <p><span>${data[1].score}</span> / 100 </p>
-    `
-    const verbal = document.getElementById('verbal');
-    verbal.innerHTML = `
-      <img src="${data[2].icon}" alt="">
-      <h3>${data[2].category}</h3>
-      <p><span>${data[2].score}</span> / 100 </p>
-    `
-    const visual = document.getElementById('visual');
-    visual.innerHTML = `
-      <img src="${data[3].icon}" alt="">
-      <h3>${data[3].category}</h3>
-      <p><span>${data[3].score}</span> / 100 </p>
-    `
-    });
+    }
+  }
+
+getData();
 
 // counter
 let counter = document.getElementById('fin-result');
-let amount=0;
+let amount = 0;
 let time = setInterval(() => {
   counter.textContent = amount+=1
   if (amount === 76) {
@@ -42,5 +28,5 @@ let time = setInterval(() => {
 // refresh button
 let refresh = document.getElementById('refresh');
 refresh.addEventListener('click', _ => {
-            location.reload();
+  location.reload();
 })

@@ -8,7 +8,7 @@
   text-align: center;
 }
 .result h1 {
-  color: hsl(241deg, 100%, 89%);
+  color: hsl(241, 100%, 89%);
   text-align: center;
   font-size: 1.2rem;
   margin: 30px 0;
@@ -19,14 +19,14 @@
 }
 .result p {
   margin: 0 50px;
-  color: hsl(241deg, 100%, 89%);
+  color: hsl(241, 100%, 89%);
 }
 
 .circle {
   width: 180px;
   height: 180px;
   background: #7857ff;
-  background: linear-gradient(0deg, hsla(241deg, 72%, 46%, 0) 0%, hsl(256deg, 72%, 46%) 100%);
+  background: linear-gradient(0deg, hsla(241, 72%, 46%, 0) 0%, hsl(256, 72%, 46%) 100%);
   border-radius: 50%;
   margin: 0 auto;
   display: flex;
@@ -35,7 +35,7 @@
   align-items: center;
 }
 .circle p {
-  color: hsl(241deg, 100%, 89%);
+  color: hsl(241, 100%, 89%);
   font-weight: 500;
   font-size: 0.8rem;
   text-align: center;
@@ -57,8 +57,8 @@
 }
 
 #reaction {
-  background-color: hsla(0deg, 100%, 67%, 0.1);
-  color: hsl(0deg, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
   border-radius: 10px;
   display: flex;
   gap: 10px;
@@ -70,17 +70,17 @@
   font-weight: 500;
 }
 #reaction p {
-  color: hsl(241deg, 100%, 89%);
+  color: hsl(241, 100%, 89%);
   margin-left: auto;
 }
 #reaction p span {
-  color: hsl(224deg, 30%, 27%);
+  color: hsl(224, 30%, 27%);
   font-weight: 700;
 }
 
 #memory {
-  background-color: hsla(39deg, 100%, 56%, 0.1);
-  color: hsl(39deg, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
   border-radius: 10px;
   display: flex;
   gap: 10px;
@@ -92,17 +92,17 @@
   font-weight: 500;
 }
 #memory p {
-  color: hsl(241deg, 100%, 89%);
+  color: hsl(241, 100%, 89%);
   margin-left: auto;
 }
 #memory p span {
-  color: hsl(224deg, 30%, 27%);
+  color: hsl(224, 30%, 27%);
   font-weight: 700;
 }
 
 #verbal {
-  background-color: hsla(166deg, 100%, 37%, 0.1);
-  color: hsl(166deg, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
   border-radius: 10px;
   display: flex;
   gap: 10px;
@@ -114,17 +114,17 @@
   font-weight: 500;
 }
 #verbal p {
-  color: hsl(241deg, 100%, 89%);
+  color: hsl(241, 100%, 89%);
   margin-left: auto;
 }
 #verbal p span {
-  color: hsl(224deg, 30%, 27%);
+  color: hsl(224, 30%, 27%);
   font-weight: 700;
 }
 
 #visual {
-  background-color: hsla(234deg, 85%, 45%, 0.1);
-  color: hsl(234deg, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
   border-radius: 10px;
   display: flex;
   gap: 10px;
@@ -136,11 +136,11 @@
   font-weight: 500;
 }
 #visual p {
-  color: hsl(241deg, 100%, 89%);
+  color: hsl(241, 100%, 89%);
   margin-left: auto;
 }
 #visual p span {
-  color: hsl(224deg, 30%, 27%);
+  color: hsl(224, 30%, 27%);
   font-weight: 700;
 }
 
@@ -150,9 +150,9 @@
   padding: 15px 0;
   margin-top: 20px;
   border-radius: 25px;
-  background-color: hsl(224deg, 30%, 27%);
+  background-color: hsl(224, 30%, 27%);
   font-weight: 700;
-  color: hsl(221deg, 100%, 96%);
+  color: hsl(221, 100%, 96%);
   font-size: 0.8rem;
 }
 
@@ -184,7 +184,7 @@ html {
   width: 700px;
   height: 500px;
   border-radius: 30px;
-  box-shadow: 6px 4px 10px 4px hsl(221deg, 100%, 96%);
+  box-shadow: 6px 4px 10px 4px hsl(221, 100%, 96%);
   display: flex;
   flex-direction: row;
 }
@@ -201,6 +201,10 @@ html {
 }
 
 @media screen and (max-width: 730px) {
+  html {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .container {
     max-width: 350px;
     height: -moz-fit-content;
@@ -208,7 +212,7 @@ html {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-    margin-top: 90px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
   }
